@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Predictive Analytics</title>
+    <style>
+      .clear {
+        clear: both;
+      }
+      .clear div {
+        width: 50%;
+        display: inline-block;
+      }
+      #col1 {
+        background-color: #3ad67d;
+        float: left;
+      }
+      #col2 {
+        background-color: #d5d6e6;
+      }
+    </style>
+</head>
+
+<body>
+<br>
+<em><strong>Prediction of Arrival Delay</strong></em>
+
+<form id="form1" name="form1" method="get">
+  <p>
+<div class="clear">
+<div id="col1">
+    <label for="UniqueCarrier">UniqueCarrier:</label>
+    <input type="text" name="UniqueCarrier" id="UniqueCarrier">
+</div>
+<div id="col2"> 
+    <label for="Origin">Origin:</label>
+    <input type="text" name="Origin" id="2552">
+</div>
+<div id="col1">
+    <label for="Dest">Dest:</label>
+    <input type="text" name="Dest" id="Dest">
+</div>
+<div id="col2">
+    <label for="DepTime">DepTime:</label>
+    <input type="number" name="DepTime" id="DepTime">
+</div>
+<div id="col1">
+    <label for="TaxiOut">TaxiOut:</label>
+    <input type="number" name="TaxiOut" id="TaxiOut">
+</div>
+<div id="col2">
+    <label for="TaxiIn">TaxiIn:</label>
+    <input type="number" name="TaxiIn" id="TaxiIn">
+</div>
+<div id="col1">
+    <label for="DepDelay">DepDelay:</label>
+    <input type="number" name="DepDelay" id="DepDelay">
+</div>
+<div id="col2">
+    <label for="DayOfWeek">DayOfWeek:</label>
+    <input type="number" name="DayOfWeek" id="DayOfWeek">
+</div>
+<div id="col1">
+    <label for="Distance">Distance:</label>
+    <input type="number" name="Distance" id="Distance">
+</div>
+<div id="col2">
+    <label for="LateAircraftDelay">LateAircraftDelay:</label>
+    <input type="number" name="LateAircraftDelay" id="LateAircraftDelay">
+</div>
+  </p>
+
+  
+  <p>
+    <input name="submit" type="submit" id="submit" formaction="http://34.72.0.181:8080" value="Submit">
+    <input type="reset" name="reset" id="reset" value="Reset">
+    <br>
+  </p>
+</form>
+</body>
+</html>
